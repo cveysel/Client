@@ -1,0 +1,136 @@
+/* Genel Stil */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Menüsü */
+/* Navigation Menüsü Stili */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+/* Giriş ve Kayıt Bağlantılarına Özel Stil */
+.navbar-right ul li a {
+  background-color: #007bff;
+  color: white;
+}
+
+.navbar-right ul li a:hover {
+  background-color: #0056b3;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Ana İçerik */
+.content {
+  display: flex;
+}
+
+/* Kategori Listesi */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  color: #333; /* Normal durumda yazı rengi */
+  cursor: pointer; /* Üzerine gelindiğinde imleç değişimi */
+  transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+
+.sidebar li:hover {
+  color: white; /* Üzerine gelindiğinde yazı rengi beyaz */
+  background-color: #333; /* Üzerine gelindiğinde arka plan rengi */
+  padding: 5px; /* İsteğe bağlı: Yazıyı daha belirgin hale getirmek için */
+  border-radius: 5px; /* İsteğe bağlı: Köşeleri yuvarlak yapmak için */
+}
+
+/* Ürünler */
+.products {
+  flex: 1;
+  padding: 20px;
+}
+
+.products h2 {
+  margin-top: 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
+  background-color: #f0f0f0; /* Ürün arka plan rengi gri */
+  border-radius: 8px; /* Köşeleri yuvarlak yapmak için */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Üzerine gelindiğinde hafifçe büyüt */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Metalik parlaklık efekti */
+  background: linear-gradient(145deg, #e0e0e0, #f0f0f0); /* Gradyan efekti */
+}
+
+.product-item h3 {
+  margin-top: 0;
+}
+
+.product-item p {
+  color: #555; /* Açıklama yazısı rengi */
+}
